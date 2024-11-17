@@ -42,3 +42,5 @@ it’s not older than 30 seconds
 9. Explain Analyse in  this notebook on tested data 
 10. add continous aggregation on rates table to get min,max,avg,.. on rates table **continuous_aggregate.sql**
 11. set up docker-compose to run it locally **docker-compose.yml**
+12. kafka solutions 
+    1.  producer >> consumer that print data every 1 sec **consumer.py** **producer.py**
