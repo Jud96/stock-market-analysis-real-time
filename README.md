@@ -38,3 +38,4 @@ it’s not older than 30 seconds
    1.  using filter and window function row_number then filter out row_number=1 **basic_query.sql**
    2.  using last function from scaletimeDB that get last value based on time/int column **last_in_timescaledb.sql**
    3.  using trigger to update latest_values table when new data inserted in rates table **trigger.sql** it is similar to stream processing
+8. final query is in **final_query.sql** using last function
