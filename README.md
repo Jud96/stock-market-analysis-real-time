@@ -46,3 +46,4 @@ it’s not older than 30 seconds
     1.  producer >> consumer that print data every 1 sec **consumer.py** **producer.py**
     2.  producer >> ksql >> consumer that print data every 1 sec **ksql.sql** **consumer_with_ksql.py** 
     3.  how can I handle currency_rate_5pm ?? I only generate random data but have think about cron job and pull and write data to kafka topic **ksql_currency_rates_5pm_table_insert.sql** or maybe just fetch data from API and use it in app
+    4.  run it in this notebook
