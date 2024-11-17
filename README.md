@@ -31,7 +31,7 @@ it’s not older than 30 seconds
     6.    data compression is a feature that allows TimescaleDB to compress data in chunks to save disk space and improve query performance
     7.    retention policy to keep data for 30 days based on requirement
     8.    Analyze and vacuum the database regularly
-    9.     don't forget to handle time zone
+    9.    don't forget to handle time zone
 5.  generate data using **generate_data.py** to test it in real time or load it from csv file or to database using threads
 6.  keep rates_5pm_yesterday in serperate table to avoid re_calcaultion of 5pm rate for each currency pair (IO operation is cost less than CPU operation) that update daily with job **rates_5pm_yesterday** 
 7.  there are three purposal to solve it 
