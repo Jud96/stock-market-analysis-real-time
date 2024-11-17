@@ -21,3 +21,4 @@ it’s not older than 30 seconds
 1. which timeseries database to use (InfluxDB,TimescaleDB,OpenTSDB,Graphite,Druid,etc)
 2.  keep in mind criteria like Data Ingestion Rate,Query Performance,Scalability,..
    **for point 1 and 2 read TimeSeriesDB.md**
+3. choicing timescaledb as I have already have experienced at postgresql. but based on requirement we can choose other DB **config_service_locally.sh**
