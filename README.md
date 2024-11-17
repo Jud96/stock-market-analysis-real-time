@@ -22,3 +22,13 @@ it’s not older than 30 seconds
 2.  keep in mind criteria like Data Ingestion Rate,Query Performance,Scalability,..
    **for point 1 and 2 read TimeSeriesDB.md**
 3. choicing timescaledb as I have already have experienced at postgresql. but based on requirement we can choose other DB **config_service_locally.sh**
+4.  we should focus on power of these Databases like continuous aggregate,compression,partitioning,.. to make our system more efficient **SQL/config_sql.sql**
+   1.  set parallelism,cache,buffering etc parameters 
+   2.  create index on event_time,ccy_couple and also create index on event_time
+   3.  Partial Indexes rates within the last 30 seconds (not tried yet)
+   4.  create hypertable on event_time and ccy_couple (that automatically partition data based on time)
+   5.  enable_chunk_skipping is a feature that allows TimescaleDB to skip chunks that do not contain data relevant to the query
+   6.  data compression is a feature that allows TimescaleDB to compress data in chunks to save disk space and improve query performance
+   7.  retention policy to keep data for 30 days based on requirement
+   8.  Analyze and vacuum the database regularly
+   9.  don't forget to handle time zone
