@@ -44,3 +44,4 @@ it’s not older than 30 seconds
 11. set up docker-compose to run it locally **docker-compose.yml**
 12. kafka solutions 
     1.  producer >> consumer that print data every 1 sec **consumer.py** **producer.py**
+    2.  2.  producer >> ksql >> consumer that print data every 1 sec **ksql.sql** **consumer_with_ksql.py** 
