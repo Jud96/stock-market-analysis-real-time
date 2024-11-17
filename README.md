@@ -36,3 +36,4 @@ it’s not older than 30 seconds
 6.  keep rates_5pm_yesterday in serperate table to avoid re_calcaultion of 5pm rate for each currency pair (IO operation is cost less than CPU operation) that update daily with job **rates_5pm_yesterday** 
 7.  there are three purposal to solve it 
    1.  using filter and window function row_number then filter out row_number=1 **basic_query.sql**
+   2.  using last function from scaletimeDB that get last value based on time/int column **last_in_timescaledb.sql**
