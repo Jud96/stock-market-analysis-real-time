@@ -40,4 +40,5 @@ it’s not older than 30 seconds
    3.  using trigger to update latest_values table when new data inserted in rates table **trigger.sql** it is similar to stream processing
 8. final query is in **final_query.sql** using last function
 9. Explain Analyse in  this notebook on tested data 
-10. set up docker-compose to run it locally **docker-compose.yml**
+10. add continous aggregation on rates table to get min,max,avg,.. on rates table **continuous_aggregate.sql**
+11. set up docker-compose to run it locally **docker-compose.yml**
