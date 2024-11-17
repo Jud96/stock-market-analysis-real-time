@@ -1,4 +1,4 @@
-We want to display on an LED screen, for a set of 5 currency pairs, both the current FX exchange rate and an indication of the change compared to yesterday’s rate at 5PM New York time.
+We want to display on an LED screen, for a set of 300 currency pairs, both the current FX exchange rate and an indication of the change compared to yesterday’s rate at 5PM New York time.
 
 We receive the rates as high frequency (assume updates for multiple currency pairs every
 millisecond) structured data, similar to the data in rates_sample.csv
@@ -39,3 +39,4 @@ it’s not older than 30 seconds
    2.  using last function from scaletimeDB that get last value based on time/int column **last_in_timescaledb.sql**
    3.  using trigger to update latest_values table when new data inserted in rates table **trigger.sql** it is similar to stream processing
 8. final query is in **final_query.sql** using last function
+9. Explain Analyse in  this notebook on tested data 
